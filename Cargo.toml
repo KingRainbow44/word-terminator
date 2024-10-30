@@ -1,0 +1,38 @@
+[package]
+name = "word-terminator"
+description = "embedded programming for word hunt"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+
+# Tokio
+tokio = { version = "1", features = ["full"] }
+
+# Windows API wrapper
+windows = { version = "0.58", features = [
+    "Win32_UI_WindowsAndMessaging", # Used for setting the window size
+] }
+
+# Logging
+log = "0.4"
+pretty_env_logger = "0.5"
+
+# Lazy Static
+lazy_static = "1.5"
+
+# Serialization
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+
+# Configuration
+more-config = { version = "2", features = ["default", "json", "binder"] }
+
+# Image Processing
+xcap = "0.0.14"
+image = "0.25"
+image-compare = "0.4"
+
+# Utility
+anyhow = "1"
+bytes = "1"
